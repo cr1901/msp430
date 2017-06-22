@@ -15,3 +15,6 @@ version = "0.1.0"
 [dependencies]
 aligned = "0.1.1"
 volatile-register = "0.2.0"
+
+[dependencies.common]
+git = "https://github.com/japaric/common"

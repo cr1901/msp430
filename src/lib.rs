@@ -19,15 +19,17 @@
 #![no_std]
 
 extern crate aligned;
+extern crate common;
 extern crate volatile_register;
 
 #[macro_use]
 pub mod asm;
-pub mod ctxt;
 pub mod exception;
 pub mod interrupt;
 pub mod peripheral;
 pub mod register;
+
+pub use common::ctxt;
 
 /// A reserved spot in the vector table
 #[derive(Clone, Copy)]
